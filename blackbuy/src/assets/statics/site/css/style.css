@@ -142,7 +142,11 @@ line-height: 30px;border: 1px solid #34ad2a;}
     .side-txt-list li.tit a{ color:#108cee; font-size:18px; line-height:48px; }
 
 /*图文列表样式 作用于类似contentsildtophot.vue  <!--热门文章begin-->  <!--热门文章end-->中间的内容样式*/
-.side-img-list{ text-align:left; padding:10px 0 11px 0; background:#fff; }
+.side-img-list{ text-align:left; padding:10px 0 11px 0; background:#fff; height: 320px; }
+.side-img-list::-webkit-scrollbar {
+    display: none;
+    /* Chrome Safari */
+}
     .side-img-list li{ display:block; padding:10px 15px; }
     .side-img-list li:after{ content:"."; display:block; height:0; clear:both; visibility:hidden; }
     .side-img-list li .img-box{ position:relative; float:left; width:60px; height:60px; overflow:hidden; }
