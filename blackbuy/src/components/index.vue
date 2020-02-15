@@ -241,13 +241,11 @@ export default {
           this.msg = result.data.message;
         });
     },
-     text(){
-        window.console.log(this.sliderlist)
-     }
+   
   },
   created() {
     this. send();
-    this.text();
+    // this.text();
   },
 
   updated() {

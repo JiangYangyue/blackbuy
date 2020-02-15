@@ -25,7 +25,7 @@
             <a href class>
               <i class="iconfont icon-cart"></i>购物车(
               <span id="shoppingCartCount">
-                <span>4</span>
+                <span>{{$store.getters.totalNum}}</span>
               </span>)
             </a>
           </div>
@@ -127,7 +127,10 @@
 
 <script>
 export default {
-  name: "app"
+  name: "app",
+  created() {
+    window.console.log(this.$store.state.count)
+  },
  
 };
 </script>
